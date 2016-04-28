@@ -1,3 +1,0 @@
-cordova build --release android
-jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore cat.keystore /Users/delacey/test/acme/platforms/android/ant-build/CordovaApp-release-unsigned.apk alias_name
-zipalign -v 4 /Users/delacey/test/acme/platforms/android/ant-build/CordovaApp-release-unsigned.apk Acme.apk

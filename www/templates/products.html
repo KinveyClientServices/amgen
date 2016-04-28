@@ -1,0 +1,22 @@
+<ion-view cache-view="false" view-title="Devices">
+  <ion-content class="has-header padding">
+    <ion-list>
+      <!--<ion-item class="item-remove-animate item-leftitem-icon-right pane" ng-repeat="product in products" type="item-text-wrap">
+      <center><img ng-src="img/{{product.img}}" height="100">
+       <div class="item item-text-wrap">
+        <h2 class="item-text-wrap"><b>{{product.name}}</b></h2></div>-->
+
+        <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="product in products" type="item-text-wrap">
+     <!-- <img ng-src="img/{{product.img}}">-->
+        <h2>{{product.device_version}}, {{product.battery}}, {{product.last_sync_time}}</h2>
+        
+        <!--<p>{{account.numemployees}} employees</p>-->
+       <!-- <i class="icon ion-chevron-right icon-accessory"></i>-->
+      </ion-item>
+       
+      </ion-item>
+    </ion-list>
+    <br><br>
+    <center><img ng-src="img/connectbutton.png" ng-click="connectme();"></center>
+  </ion-content>
+</ion-view>

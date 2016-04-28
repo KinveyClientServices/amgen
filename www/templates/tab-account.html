@@ -1,8 +1,8 @@
 <ion-view title="Account">
     <ion-content>
         <div class="padding">
-        <h4>Login</h4>
-        <div class="block-input-label">
+        <!--<h4>Login</h4>-->
+        <div>
             <label id="login-email-label" ng-class="{'error-style': submittedEmail}" for="login-email">Email:</label>
             <input id="login-email" type="email" name="email" ng-class="{'error-style': submittedEmail}" ng-model="userData.email"
                    placeholder="john@example.com"
@@ -16,13 +16,13 @@
             <span class="login"  ng-show="submittedPassword">A password is required.</span>
         </div>
         </div>
-        <div class="padding">
-            <button class="button button-block acmebutton" ng-click="validateUser()">
+        <div class="padding"><br><br><br><br><br><br><br><br><br>
+            <button class="button button-block kinveybutton" ng-click="validateUser()">
                 Login
             </button>
-            <span class="error" ng-show="submittedError">{{errorDescription}}</span>
+            <span class="error acemtext" ng-show="submittedError">{{errorDescription}}</span>
         </div>
-        <div class="padding">
+        <!--<div class="padding">
         <h4>Signup</h4>
         <div class="block-input-label">
             <label id="signup-email-label" ng-class="{'error-style': submittedEmail}" for="signup-email">Email:</label>
@@ -44,9 +44,9 @@
                 Sign up
             </button>
             <span class="error" ng-show="submittedError">{{errorDescription}}</span>
-        </div>
+        </div>-->
         <div class="padding">
-            <button class="button button-block acmebutton" ng-click="logout()">
+            <button class="button button-block kinveybutton" ng-click="logout()">
                 Logout
             </button>
             <span class="error" ng-show="submittedError">{{errorDescription}}</span>

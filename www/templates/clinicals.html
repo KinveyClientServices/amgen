@@ -1,0 +1,46 @@
+<ion-view cache-view="false" view-title="Clinical Trials">
+<ion-nav-bar title="Clinical Trials" ng-style="{'background-color': primarycolor}">
+
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
+          <!--<h1 class="title">Let's Keep in Touch</h1>-->
+        </ion-nav-buttons>
+
+    </ion-nav-bar>
+    <ion-content>
+        <!--<option ng-repeat="account in accountlist"</option>-->
+        <div class="list">
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    City
+                </div>
+                <select id="chosenProduct" ng-model="selectValue" ng-change="changeme()">
+                    <option ng-repeat="product in products">{{product.city}}</option>
+                </select>
+            </label>
+             <label class="item item-input">
+    <input type="text" placeholder="Query Term" id="queryterm">
+  </label>
+        </div>
+       <div class="list">
+    <div class="list card">
+      <ion-item ng-repeat="clinic in clinics" type="item item-text-wrap">
+        <!--<div class="item item-avatar">-->
+          <!--<center><img src="{{product.img}}" height="200"></img></center>-->
+          <div class="item item-text-wrap">
+          <h2 class="item-text-wrap"><b><center>{{clinic.condition_summary}}</center></b></h2>
+          <h3 class="item-text-wrap"><center>{{clinic.title}}</center></h3>
+          <!--<p ng-bind-html="product.description" class="item-text-wrap"></p>--></div>
+          
+      </ion-item>
+    </div></div>
+
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-stable">
+  <div class="buttons">
+    <button class="button" ng-click="doQuery();">Run Query</button>
+  </div>
+  
+  </div>
+</ion-footer-bar>
+</ion-view>

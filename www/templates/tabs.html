@@ -1,4 +1,4 @@
-<ion-nav-bar class="bar-acme">
+<ion-nav-bar ng-style="{'background-color': primarycolor}">
         <ion-nav-back-button class="button-icon ion-arrow-left-c">
         </ion-nav-back-button>
 
@@ -10,7 +10,7 @@
           <button class="button button-icon button-clear ion-compose" ng-click="modal.show()"></button>
         </ion-nav-buttons>-->
     </ion-nav-bar>
-<ion-tabs class="bar-acme tabs-icon-top">
+<ion-tabs class="tabs-icon-top" ng-style="mystyle">
 
 
   <!-- Home Tab -->
@@ -20,18 +20,18 @@
 
 
   <!-- Companies Tab -->
-  <ion-tab title="Accounts" icon-off="ion-folder" icon-on="ion-folder" href="#/menu/tab/companies">
-    <ion-nav-view name="tab-companies"></ion-nav-view>
+  <ion-tab title="{{productsname}}" icon-off="ion-android-walk" icon-on="ion-android-walk" href="#/menu/tab/products">
+    <ion-nav-view name="tab-products"></ion-nav-view>
   </ion-tab>
 
   <!-- Search Tab -->
-  <ion-tab title="Search" icon-off="ion-search" icon-on="ion-search" href="#/menu/tab/search">
+  <ion-tab title="Routine" icon-off="ion-clock" icon-on="ion-clock" href="#/menu/tab/search">
     <ion-nav-view name="tab-search"></ion-nav-view>
   </ion-tab>
 
 
   <!-- Login Tab -->
-  <ion-tab title="Login" icon-off="ion-ios7-gear-outline" icon-on="ion-ios7-gear" href="#/menu/tab/account">
+  <ion-tab title="Login" icon-off="ion-ios-locked" icon-on="ion-ios-unlocked" href="#/menu/tab/account">
     <ion-nav-view name="tab-account"></ion-nav-view>
   </ion-tab>
 
